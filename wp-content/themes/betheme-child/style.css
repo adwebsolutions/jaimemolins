@@ -41,6 +41,15 @@ p {
 .uvc-sub-heading p {
     line-height: 1.7em !important;
 }
+.rev-btn {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+@media screen and (max-width: 1023px){
+    .ubtn-ctn-right, .ubtn-ctn-left {
+        text-align: center !important;
+    }
+}
 /*top bar*/
 .social .slogan {
     color: #fff;
@@ -56,9 +65,9 @@ p {
     padding: 65px 0 !important;
     font-weight: 500;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1239px) {
     #Top_bar .menu > li > a {
-        padding: 0 !important;
+        padding: 0 25px !important;
         font-weight: 500;
     }
 }
@@ -79,6 +88,11 @@ p {
 
 #Top_bar.is-sticky .menu_wrapper .menu > li > a {
     padding: 15px 0 !important;
+}
+@media screen and (max-width: 1239px) {
+    #Top_bar.is-sticky .menu_wrapper .menu > li > a {
+        padding: 0 25px !important;
+    }
 }
 .menu-line-below #Top_bar .menu > li > a {
     text-transform: uppercase;
@@ -127,7 +141,7 @@ p {
 }
 #Footer ul li {
     list-style: none;
-    line-height: 30px;
+    line-height: 24px;
 }
 #Footer ul li::after {
     content: "";
@@ -140,15 +154,15 @@ p {
 }
 
 #Footer ul li:before {
-    content: "\f105";
-    font-family: "FontAwesome",sans-serif;
+    content: '\e915';
+    font-family: "mfn-icons";
     font-style: normal;
     display: block;
     float: left;
     text-decoration: inherit;
-    padding-top: 0px;
+    padding-top: 0;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 24px;
     margin: 0 5px 0 0;
     font-weight: 700;
     color: #220B33;
@@ -181,6 +195,9 @@ p {
     color: #ffffff;
     font-size: 12px;
     text-align: center;
+}
+.copyright a {
+    color:#ffffff !important;
 }
 .priv {display: inline-block}
 #Footer .footer_copy .copyright {
@@ -284,12 +301,13 @@ p {
 /*Qué es magia*/
 #mago-home {
     background: #000000;
-    background: -moz-linear-gradient(left,  #ffffff 0%, #333333 14.2%, #fff 14.2%, #fff 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(14.2%,#333333), color-stop(14.2%,#fff), color-stop(100%,#fff));
-    background: -webkit-linear-gradient(left,  #fff 0%,#333333 14.2%,#fff 14.2%,#fff 100%);
-    background: -o-linear-gradient(left,  #fff 0%,#333333 14.2%,#fff 14.2%,#fff 100%);
-    background: -ms-linear-gradient(left,  #fff 0%,#333333 14.2%,#fff 14.2%,#fff 100%);
-    background: linear-gradient(to right,  #fff 0%,#333333 14.2%,#fff 14.2%,#fff 100%);
+    background: linear-gradient(to right, #fff 0%,#333333 8%,#333333 12.2%,#fff 12.2%,#fff 100%);;
+    background: -moz-linear-gradient(left,  #ffffff 0%, #333333 8%,#333333 12.2%,#fff 12.2%, #fff 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(8%,#333333), color-stop(12.2%,#333333), color-stop(14.2%,#fff), color-stop(100%,#fff));
+    background: -webkit-linear-gradient(left,  #fff 0%, #333333 8%,#333333 12.2%,#fff 12.2%,#fff 100%);
+    background: -o-linear-gradient(left,  #fff 0%, #333333 8%,#333333 12.2%,#fff 12.2%,#fff 100%);
+    background: -ms-linear-gradient(left,  #fff 0%, #333333 8%,#333333 12.2%,#fff 12.2%,#fff 100%);
+    background: linear-gradient(to right,  #fff 0%, #333333 8%,#333333 12.2%,#fff 12.2%,#fff 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff',GradientType=1 );
     font-family: 'Open Sans', sans-serif !important;
     margin-bottom: 35px;
@@ -297,14 +315,29 @@ p {
     -moz-transition: background-color 500ms ease-out 1s;
     -o-transition: background-color 500ms ease-out 1s;
     transition: background-color 500ms ease-out 1s;
-    padding: 0 18%;
+    padding: 0 16.1%;
 }
-@media screen and (max-width: 959px) {
+@media screen and (max-width: 1440px) {
+    #mago-home {
+        padding: 0 110px;
+    }
+}
+@media screen and (max-width: 1366px) {
+    #mago-home {
+        padding: 0 70px;
+    }
+}
+@media screen and (max-width: 1280px) {
+    #mago-home {
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 1024px) {
     #mago-home {
         padding: 0 15px;
     }
 }
-@media screen and (max-width: 1499px){
+@media screen and (max-width: 1365px){
 
     #mago-home {
         background: none;
@@ -317,12 +350,17 @@ p {
 #mago-home .uvc-sub-heading, #mago-home .uvc-sub-heading p {
     font-family: 'Open Sans', sans-serif !important;
 }
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     #somos-magos .upb_row_bg{
         background: none!important;
     }
 }
-
+@media screen and (max-width: 1200px) {
+    #somos-magos .upb_row_bg{
+        background-size: 55% !important;
+        background-position: bottom right !important;
+    }
+}
 .vc_row-has-fill > .vc_column_container > .vc_column-inner {
     padding-top: 0 !important;
 }
@@ -338,6 +376,14 @@ p {
 #inner-whose-sep .uvc-sub-heading {
     font-family: "Open Sans",sans-serif;
 }
+.para-quien-box img {
+    opacity:0.6;
+    border-radius: 15px;
+}
+.para-quien-box .wpb_column .wpb_wrapper:hover img {
+    opacity: 1;
+    cursor: hand;
+}
 .para-quien-box .uvc-main-heading h2{
     font-family: 'Raleway', sans-serif;
     margin-left: 20px;
@@ -351,18 +397,15 @@ p {
 .para-quien-box .aio-icon-component {
     margin-bottom: 15px;
 }
-#call2-home {
-    padding: 120px 0;
-}
 
 #testimonials-home  .bq_wrapper{
-    font-size: 12px !important;
+    font-size: 13px !important;
     line-height: 20px !important;
     font-style: normal !important;
     color: #5e5e5e;
     padding-left: 60px;
     padding-right: 60px;
-    background: url("http://localhost:2100/jaimemolins/wp-content/uploads/2015/05/quotes.png") no-repeat center center;
+    background: url("../../uploads/2017/04/quotes-min.png") no-repeat center center;
 }
 @media screen and (max-width: 767px){
     #testimonials-home .bq_wrapper {
@@ -539,6 +582,13 @@ p {
     position:relative;
     min-height: 110px;
 }
+@media screen and (min-width:960px) and (max-width: 1200px){
+    #beneficios-que-hago ul li
+    {
+        width: 23%;  /* accommodate the widest item */
+        min-height: 130px;
+    }
+}
 @media screen and (min-width:768px) and (max-width: 959px){
     #beneficios-que-hago ul li
     {
@@ -636,6 +686,11 @@ p {
 #info-contact .aio-icon-box {
     min-height: 220px;
 }
+@media screen and (max-width: 992px){
+    #info-contact .aio-icon-box {
+        min-height: 235px;
+    }
+}
 #info-contact .border-box .aio-icon-box:before {
     content: '';
     border-left: 1px solid #b7b7b7;
@@ -653,7 +708,20 @@ p {
     left:auto;
     top: 40%;
 }
+#info-contact .square_box-icon .aio-icon-description {
+    padding-bottom: 0;
+}
 /*Contact form*/
+@media screen and (max-width: 767px){
+    .wpb_wrapper .wpcf7-form {
+        display: block;
+    }
+}
+@media screen and (max-width: 959px){
+    .vc_col-sm-6 {
+        width: 100% !important;
+    }
+}
 span.wpcf7-form-control-wrap .wpcf7-date, span.wpcf7-form-control-wrap .wpcf7-quiz, span.wpcf7-form-control-wrap .wpcf7-number, span.wpcf7-form-control-wrap .wpcf7-select, span.wpcf7-form-control-wrap .wpcf7-text, span.wpcf7-form-control-wrap .wpcf7-textarea {
     border-width: 0 0 1px 0 !important;
     -webkit-box-shadow: none !important;

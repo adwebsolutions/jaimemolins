@@ -91,7 +91,7 @@ function custom_socials(){
 
 function include_social($target,$ico,$option,$title){
 	echo '
-		<div class="km-socials-share-modern-item km-item-bind-view km-item-bind-hidden" style="--icon-transition-time:0.8s;">
+		<div class="km-socials-share-modern-item km-item-bind-view km-item-bind-hidden km-'.$option.'" style="--icon-transition-time:0.8s;">
 			<div class="km-socials-m-back km-socials-m-back-color"></div>
 			<div class="km-socials-m-back km-socials-m-back-colorscheme"></div>
 			<i class="km-socials-m-icon km-socials-m-icon-color '.$ico.'"></i>

@@ -57,4 +57,5 @@
             b ? a(this).removeClass("km-item-bind-hidden").addClass("km-item-bind-shown") : a(this).unbind("inview")
         })
     })
-}(jQuery);
+}(jQuery)
+;
