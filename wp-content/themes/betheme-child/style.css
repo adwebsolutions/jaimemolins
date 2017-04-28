@@ -120,6 +120,15 @@ p {
 #Footer {
     font-family: "Open Sans",sans-serif;
 }
+#Footer #nav_menu-2 {
+    padding-left: 60px;
+}
+@media screen and (max-width: 768px){
+    #Footer #nav_menu-2 {
+        padding-left: 20px;
+    }
+}
+
 #Footer .widgets_wrapper .widget {
     padding: 0;
 }
@@ -773,4 +782,43 @@ span.wpcf7-form-control-wrap .wpcf7-date, span.wpcf7-form-control-wrap .wpcf7-qu
         width: 95%;  /* accommodate the widest item */
         min-height: 50px;
     }
+}
+/*Para que*/
+#call5-para-que {
+    padding:60px 0;
+}
+
+#call5-para-que .ubtn-normal {
+    font-family: 'Lato', sans-serif;
+}
+
+#para-que-1 {
+    background: #230b33;
+    background: linear-gradient(to right, #230b33 0%, #230b33 50%, #fff 50%, #fff 100%);
+    background: -moz-linear-gradient(left, #230b33 0%, #230b33 50%, #fff 50%, #fff 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #230b33), color-stop(50%, #230b33), color-stop(50%, #ffffff), color-stop(100%, #fff));
+    background: -webkit-linear-gradient(left, #230b33 0%, #230b33 50%, #fff 50%, #fff 100%);
+    background: -o-linear-gradient(left, #230b33 0%, #230b33 50%, #fff 50%, #fff 100%);
+    background: -ms-linear-gradient(left, #230b33 0%, #230b33 50%, #fff 50%, #fff 100%);
+    background: linear-gradient(to right, #230b33 0%, #230b33 50%, #fff 50%, #fff 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff', endColorstr='#fff', GradientType=1);
+}
+
+#para-que-1 .pq1-1 .uvc-heading-spacer .uvc-headings-line {
+    border-color: rgb(255, 255, 255) !important;
+}
+
+@media screen and (max-width:962px){
+    #para-que-1 {
+        background:none;
+    }
+    #para-que-1 .pq1-1 {
+        background: #230b33;
+    }
+}
+
+
+#para-que-2 .vc_column_container > .vc_column-inner {
+    padding-left: 0;
+    padding-right: 0;
 }
