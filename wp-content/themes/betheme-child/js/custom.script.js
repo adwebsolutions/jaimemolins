@@ -3,7 +3,7 @@
  */
 jQuery(document).ready(function ($) {
     "use strict";
-    $.fn.wrapInTag = function(opts) {
+    /* $.fn.wrapInTag = function(opts) {
         var tag = opts.tag || 'strong',
             words = opts.words || [],
             regex = RegExp(words.join('|'), 'gi'),
@@ -14,13 +14,13 @@ jQuery(document).ready(function ($) {
         });
     };
 
-    $("#beneficios-que-hago").find("li").each(function(){
+   $("#beneficios-que-hago").find("li").each(function(){
         var texttoreplace = $(this).text().substring(0, 2);
         console.log(texttoreplace);
         $(this).wrapInTag({
             tag: 'span',
             words: [texttoreplace]
         });
-    });
+    });*/
 
 });

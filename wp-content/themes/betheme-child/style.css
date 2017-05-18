@@ -35,9 +35,9 @@ p {
 .wpb_wrapper > div {
     margin-bottom: 0;
 }
-.uvc-heading-spacer .uvc-headings-line{
+/*.uvc-heading-spacer .uvc-headings-line{
     border-color: rgb(0, 0, 0) !important;
-}
+}*/
 .uvc-sub-heading p {
     line-height: 1.7em !important;
 }
@@ -574,22 +574,31 @@ p {
 #top-content-que-hago ul li {
     margin-bottom: 0;
 }
-#beneficios-que-hago ul
-{
+#beneficios-que-hago ul {
     width: 100%;
     margin: 0;
     padding: 0;
 }
-#beneficios-que-hago ul li
-{
+#beneficios-que-hago ul li {
     float: left;
     width: 23%;  /* accommodate the widest item */
     margin-right: 1%;
     margin-left: 1%;
     font-size: 12px;
-    list-style:none;
+    list-style: none ;
     position:relative;
     min-height: 110px;
+}
+#beneficios-que-hago ul li:before {
+    content: "";
+    position: relative;
+    float: left;
+    background:url("http://localhost:2100/jaimemolins/wp-content/uploads/2017/05/estrella.png") no-repeat top left;
+    width: 38px;
+    height: 36px;
+    display: block;
+    top: 4px;
+    margin-right: 5px;
 }
 @media screen and (min-width:960px) and (max-width: 1200px){
     #beneficios-que-hago ul li
@@ -720,6 +729,20 @@ p {
 #info-contact .square_box-icon .aio-icon-description {
     padding-bottom: 0;
 }
+#info-contact .aio-icon-component.no-ico {
+    margin-top: 75px;
+}
+#info-contact .no-ico h3 {
+    padding-top: 30px;
+}
+#info-contact a.jm-btn {
+    display: inline-block;
+    line-height: 40px;
+    border: 1px solid #220B33;
+    border-radius: 5px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
 /*Contact form*/
 @media screen and (max-width: 767px){
     .wpb_wrapper .wpcf7-form {
@@ -821,4 +844,7 @@ span.wpcf7-form-control-wrap .wpcf7-date, span.wpcf7-form-control-wrap .wpcf7-qu
 #para-que-2 .vc_column_container > .vc_column-inner {
     padding-left: 0;
     padding-right: 0;
+}
+#que-digo-gallery .wpb_content_element{
+    margin-bottom: 0;
 }
